@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/assets/css/App.css';
+import '@/assets/css/App.scss';
 
 //引入antd的css
 import 'antd/dist/antd.css'
