@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../src/assets/css/App.css';
 
+//引入antd的css
+import 'antd/dist/antd.css'
+//引入路由模式
+import {HashRouter} from 'react-router-dom'
+//引入redux仓库
+import store from './store/index'
+import {Provider} from 'react-redux'
+//引入组件
+import Layouts from './views/layout'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Provider store={store}>
+          <HashRouter>
+            <Layouts/>
+          </HashRouter>    
+        </Provider>  
     </div>
   );
 }
