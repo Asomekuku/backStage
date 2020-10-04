@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let baseURL_dev='http://localhost:3000' //本地地址
+let baseURL_dev='http://localhost:8080' //本地地址
 const instance = axios.create({
     baseURL: baseURL_dev,
     timeout: 7000,

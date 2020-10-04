@@ -10,7 +10,7 @@ import {
 } from '@ant-design/icons'
 //引入组件
 import loadble from '@loadable/component'
-const UserList = loadble(()=>import('./dataManageMent/userList'))
+const UserList = loadble(()=>import('./dataManageMent/userList/userList'))
 
 const routes=[
     {
